@@ -18,7 +18,7 @@ function Sidebar() {
 
 
     return (
-        <div className=" p-2 mt-5 max-w-3xl  xl:min-w-300px">
+        <div className=" p-2 mt-5 ">
             <SidebarRow src={session!.user!.image as string} title={session?.user?.name} />
             <SidebarRow Icon={UserIcon} title="Friends"/>
             <SidebarRow Icon={UserGroupIcon} title="Groups"/>

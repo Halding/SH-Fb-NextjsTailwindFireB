@@ -21,13 +21,13 @@ import {signOut, useSession} from "next-auth/react";
 
 function Header() {
 
-    const  { data: session} = useSession();
+    const  {data: session} = useSession();
 
 
 
     return (
 
-        <div className="sticky top-0 z-50 flex items-center p-2 lg:px-5 shadow-md">
+        <div className="sticky top-0 z-50 flex items-center p-2 md:px-5 shadow-md">
 
             {/* Left */}
 
@@ -38,7 +38,7 @@ function Header() {
 
                 <div className="flex ml-2 item items-center rounded-full bg-gray-100 p-2">
                     <SearchIcon className="h-6 text-gray-600"></SearchIcon>
-                    <input className="hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink" type="text-" placeholder="Search Facebook"/>
+                    <input className="hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink" type="text" placeholder="Search Facebook"/>
                 </div>
             </div>
 

@@ -6,14 +6,14 @@ import Header from "../components/Header";
 import {getSession} from "next-auth/react";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 
 export default function Home({session} : any)  {
 
     if(!session) return <Login></Login>
 
-
   return (
-      <div>
+      <div className="h-screen bg-gray-100 overflow-hidden">
           <Head>
               <title>Facebook But Not Really</title>
               <link  rel="icon" href="https://links.papareact.com/5me" />
@@ -25,13 +25,12 @@ export default function Home({session} : any)  {
           <main className="flex">
               {/** Sidebar **/}
               <Sidebar></Sidebar>
-              {/** Feed **/}
+              <Feed></Feed>
               {/** Widget **/}
           </main>
 
       </div>
   )
-
 }
 
 export async function  getServerSideProps(context: any) {
