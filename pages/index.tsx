@@ -7,6 +7,7 @@ import {getSession} from "next-auth/react";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
 import Feed from "../components/Feed";
+import Widgets from "../components/Widgets";
 
 export default function Home({session} : any)  {
 
@@ -26,7 +27,7 @@ export default function Home({session} : any)  {
               {/** Sidebar **/}
               <Sidebar></Sidebar>
               <Feed></Feed>
-              {/** Widget **/}
+              <Widgets></Widgets>
           </main>
 
       </div>
