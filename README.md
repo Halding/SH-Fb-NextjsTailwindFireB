@@ -2,6 +2,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+REMEMBER TO MAKE A .ENV.LOCAL file for facebookauth
+
 First, run the development server:
 
 ```bash
